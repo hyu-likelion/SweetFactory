@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="outerCalculatorContainer">
+        <div class="innerCalculatorContainer">
+        <table cellspacing="0" cellpadding="0">
+            <tr>
+                <td colspan=4>
+                    <input type="text" value="">
+                </td>
+            <tr>
+                <td colspan="3"><button onclick="Reset()">AC</button></td>
+                <td><button class="symbol" onclick="Add('/')">&divide;</button></td>  
+            </tr>
+            <tr>
+                <td><button onclick="Add(7)">7</button></td>
+                <td><button onclick="Add(8)">8</button></td>
+                <td><button onclick="Add(9)">9</button></td>
+                <td><button class="symbol" onclick="Add('*')">&times;</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="Add(4)">4</button></td>
+                <td><button onclick="Add(5)">5</button></td>
+                <td><button onclick="Add(6)">6</button></td>
+                <td><button class="symbol" onclick="Add('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="Add(1)">1</button></td>
+                <td><button onclick="Add(2)">2</button></td>
+                <td><button onclick="Add(3)">3</button></td>
+                <td><button class="symbol" onclick="Add('+')">+</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="Add(0)">0</button></td>
+                <td><button onclick="Add('.')">.</button></td>
+                <td><button class="symbol" onclick="Calculate()">=</button></td>
+            </tr>
+        </table>
+        </div>
+    </div>
+    
+    <script src="calculator.js"></script>
+</body>
+</html>
