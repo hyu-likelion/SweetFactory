@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>계산기</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="row-container">
+                <input type="text" id="input-line">
+            </div>
+            <div class="row-container">
+                <button onclick="reset()" class="button-3x">AC</button>
+                <button onclick="put('/')" class="button-orange">&divide;</button>
+            </div>
+            <div class="row-container">
+                <button onclick="put('7')">7</button>
+                <button onclick="put('8')">8</button>
+                <button onclick="put('9')">9</button>
+                <button onclick="put('*')" class="button-orange">&times;</button>
+            </div>
+            <div class="row-container">
+                <button onclick="put('4')">4</button>
+                <button onclick="put('5')">5</button>
+                <button onclick="put('6')">6</button>
+                <button onclick="put('-')" class="button-orange">-</button>
+            </div>
+            <div class="row-container">
+                <button onclick="put('1')">1</button>
+                <button onclick="put('2')">2</button>
+                <button onclick="put('3')">3</button>
+                <button onclick="put('+')" class="button-orange">+</button>
+            </div>
+            <div class="row-container">
+                <button onclick="put('0')" class="button-2x">0</button>
+                <button onclick="put('.')">.</button>
+                <button onclick="calculate()" class="button-orange">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
