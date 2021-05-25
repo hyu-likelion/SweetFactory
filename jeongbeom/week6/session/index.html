@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="sick" disabled>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" onclick="reset()">AC</td>
+                    <td onclick="add('/')" class="operator">&divide;</td>
+                </tr>
+                <tr>
+                    <td onclick="add(7)">7</td>
+                    <td onclick="add(8)">8</td>
+                    <td onclick="add(9)">9</td>
+                    <td onclick="add('*')" class="operator">&times;</td>
+                </tr>
+                <tr>
+                    <td onclick="add(4)">4</td>
+                    <td onclick="add(5)">5</td>
+                    <td onclick="add(6)">6</td>
+                    <td onclick="add('-')" class="operator">-</td>
+                </tr>
+                <tr>
+                    <td onclick="add(1)">1</td>
+                    <td onclick="add(2)">2</td>
+                    <td onclick="add(3)">3</td>
+                    <td onclick="add('+')" class="operator">+</td>
+                </tr>
+                <tr>
+                    <td colspan="2" onclick="add(0)">0</td>
+                    <td onclick="add('.')">.</td>
+                    <td onclick="calculate()" class="operator">=</td>
+                </tr>
+            </table>
+    </div>   
+    <script src="calculator.js"></script>
+</body>
+</html>
