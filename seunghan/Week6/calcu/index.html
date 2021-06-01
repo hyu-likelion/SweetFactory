@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>계산기</title>
+</head>
+<body>
+    <!-- div 여러 개로 하기 ..?! -->
+    <div id="outer">
+        <div id="inner">
+        <table border="1">
+            <tr>
+                <td class="input_table" colspan="4">
+                    <input type="text" id="display" style="text-align:right;">
+                    <!-- input 태그가 박스 크기에 꽉 차지 않는다! -->
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="btn" onclick="reset()">AC</td>
+                <td class="cal" onclick="add('/')">/</td>
+            </tr>
+            <tr>
+                <td class="btn" onclick="add(7)">7</td>
+                <td class="btn" onclick="add(8)">8</td>
+                <td class="btn" onclick="add(9)">9</td>
+                <td class="cal" onclick="add('*')">x</td>
+            </tr>
+            <tr>
+                <td class="btn" onclick="add(4)">4</td>
+                <td class="btn" onclick="add(5)">5</td>
+                <td class="btn" onclick="add(6)">6</td>
+                <td class="cal" onclick="add('-')">-</td>
+            </tr>
+            <tr>
+                <td class="btn" onclick="add(1)">1</td>
+                <td class="btn" onclick="add(2)">2</td>
+                <td class="btn" onclick="add(3)">3</td>
+                <td class="cal" onclick="add('+')">+</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="btn" onclick="add(0)">0</td>
+                <td class="btn" onclick="add('.')">.</td>
+                <td class="cal" onclick="cal()">=</td>
+            </tr>
+            </table>
+        </div>
+    </div>
+<script src="cal.js"></script>
+</body>
+</html>
